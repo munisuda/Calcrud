@@ -46,8 +46,8 @@ def inserter(year: int,month:int ,day:int ,hour_24: int,min:int,summary:str,loca
   global eventID
   eventID = event['id']
   print("The event ID is " + eventID)
-  
- def deleter():
+
+def deleter():
   credentials = flow.run_console()
   service = build("calendar", 'v3', credentials=credentials)
   service.events().delete(calendarId=os.environ.get('calID'), eventId=eventID).execute()

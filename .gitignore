@@ -1,0 +1,6 @@
+.env
+og-creds.json
+token.pkl
+env
+__pycache__
+.DS_Store
